@@ -1,0 +1,11 @@
+🎨 Transforming Doodles to Reality with Pix2Pix!
+
+I'm excited to share my implementation of a Pixar-style Pix2Pix model. It takes simple user-drawn doodles and translates them into realistic, textured images using Conditional GANs.
+
+Highlights:
+- U-Net Generator with skip connections to maintain spatial precision.
+- Conditional Discriminator for accurate image attribution.
+
+Repo: https://github.com/Mzafeer11/Doodle-to-Pic
+
+#ComputerVision #GANs #Pix2Pix #AIArt #DeepLearning
