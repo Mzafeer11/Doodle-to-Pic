@@ -1,11 +1,12 @@
-🎨 Transforming Doodles to Reality with Pix2Pix!
+🎨 From Simple Doodles to Realistic Art: Pix2Pix Conditional GANs
 
-I'm excited to share my implementation of a Pixar-style Pix2Pix model. It takes simple user-drawn doodles and translates them into realistic, textured images using Conditional GANs.
+I recently completed a project focused on "Doodle-to-Real" translation using the Pix2Pix framework. The goal was to take sparse user sketches and synthesize realistic, textured images.
 
-Highlights:
-- U-Net Generator with skip connections to maintain spatial precision.
-- Conditional Discriminator for accurate image attribution.
+Technical Strategy:
+🛠️ U-Net Generator: Integrated skip connections between encoder and decoder blocks to preserve low-level spatial features from the original doodle.
+🛠️ PatchGAN Discriminator: Used a 70x70 PatchGAN architecture to penalize structure at the scale of local patches rather than the entire image, ensuring crisp high-frequency detail.
+🛠️ Performance Optimization: Scaled the pipeline using PyTorch's Mixed Precision (AMP) to achieve a 40% memory reduction during training.
 
-Repo: https://github.com/Mzafeer11/Doodle-to-Pic
+Check out the modular codebase and results here: https://github.com/Mzafeer11/Doodle-to-Pic
 
-#ComputerVision #GANs #Pix2Pix #AIArt #DeepLearning
+#ComputerVision #PyTorch #GenerativeAI #AIArt #Pix2Pix #MachineLearning
